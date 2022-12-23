@@ -1,7 +1,6 @@
 export default function miniMaxSum(arr: number[]): number[] {
 
   if(arr.length < 2) {
-    console.log(arr[0],arr[0])
     return [arr[0], arr[0]]
   }
 
