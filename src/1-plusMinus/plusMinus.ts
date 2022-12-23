@@ -1,24 +1,15 @@
 export default function plusMinus(arr: number[]): string[] {
-  let positiveFrequency:number = 0
-  let negativeFrequency:number = 0
-  let zeroFrequency:number = 0
+  let positiveFrequency:number[] = arr.filter(element => {return element > 0 })
+  let negativeFrequency:number[] = arr.filter(element => {return element < 0 })
+  let zeroFrequency:number[] = arr.filter(element => {return element === 0 })
 
-  for (let i = 0; i < arr.length; i++){
-      if(arr[i] === 0) {
-          zeroFrequency += 1
-      } else if(arr[i] < 0) {
-          negativeFrequency += 1
-      } else {
-          positiveFrequency += 1
-      }
-  }
   const result = [
-    (positiveFrequency/arr.length).toFixed(6),
-    (negativeFrequency/arr.length).toFixed(6),
-    (zeroFrequency/arr.length).toFixed(6)
+    (positiveFrequency.length/arr.length).toFixed(6),
+    (negativeFrequency.length/arr.length).toFixed(6),
+    (zeroFrequency.length/arr.length).toFixed(6)
   ]
 
-  console.log(`${(positiveFrequency/arr.length).toFixed(6)}\n${(negativeFrequency/arr.length).toFixed(6)}\n${(zeroFrequency/arr.length).toFixed(6)}`)
+  console.log(`${(positiveFrequency.length/arr.length).toFixed(6)}\n${(negativeFrequency.length/arr.length).toFixed(6)}\n${(zeroFrequency.length/arr.length).toFixed(6)}`)
 
   return result
 }
