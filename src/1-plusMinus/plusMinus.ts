@@ -9,7 +9,5 @@ export default function plusMinus(arr: number[]): string[] {
     (zeroFrequency.length/arr.length).toFixed(6)
   ]
 
-  console.log(`${(positiveFrequency.length/arr.length).toFixed(6)}\n${(negativeFrequency.length/arr.length).toFixed(6)}\n${(zeroFrequency.length/arr.length).toFixed(6)}`)
-
   return result
 }

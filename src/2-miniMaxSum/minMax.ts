@@ -9,7 +9,5 @@ export default function miniMaxSum(arr: number[]): number[] {
   const minNumber:number = arr.reduce((a,b) => {return Math.min(a,b)})
   const maxNumber:number = arr.reduce((a,b) => {return Math.max(a,b)})
 
-  console.log(sum - maxNumber, sum - minNumber)
-
   return [sum - maxNumber, sum - minNumber]
 }
