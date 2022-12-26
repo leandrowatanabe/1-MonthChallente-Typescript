@@ -1,5 +1,5 @@
 export default function miniMaxSum(arr: number[]): number[] {
-
+  
   if(arr.length < 2) {
     return [arr[0], arr[0]]
   }

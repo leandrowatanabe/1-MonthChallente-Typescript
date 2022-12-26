@@ -1,5 +1,4 @@
 export default function sparseArrays(strings: string[], queries: string[]): number[] {
-
   const ocurrencys:Array<string[]> = []
   const result:number[] = []
 
